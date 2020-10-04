@@ -1,5 +1,7 @@
 <div align="center">
-  <h1>write-dir-safe</h1>
+  <a href="https://github.com/bconnorwhite/write-dir-safe">
+    <img alt="write-dir-safe" src="assets/header.svg" />
+  </a>
   <a href="https://npmjs.com/package/write-dir-safe">
     <img alt="NPM" src="https://img.shields.io/npm/v/write-dir-safe.svg">
   </a>
@@ -23,7 +25,7 @@
 
 - Returns `true` if directory now exists.
 - Returns `false` if unable to create directory.
-- Returns `undefined` on other errors (for example, permission denied) rather than throwing.
+- Returns `undefined` on other errors (ex: permission denied) rather than throwing.
 
 ## Installation
 
@@ -45,7 +47,10 @@ function writeDir(path: string, options: Options): Promise<boolean | undefined>;
 function writeDirSync(path: string, options: Options): boolean | undefined;
 
 type Options = {
-  recursive?: boolean; // Default: true
+  /**
+   * Recursively create parent directories as well. Default: `true`
+   */
+  recursive?: boolean;
 }
 ```
 
@@ -64,8 +69,11 @@ type Options = {
 
 [MIT](https://opensource.org/licenses/MIT)
 
+<br />
+
 ## Related Packages
 
+- [fs-safe](https://www.npmjs.com/package/fs-safe): A simple fs wrapper that doesn't throw
 - [read-dir-safe](https://www.npmjs.com/package/read-dir-safe): Read directories recursively or non-recursively
 - [remove-dir-safe](https://www.npmjs.com/package/remove-dir-safe): Remove directories recursively or non-recursively
 - [read-file-safe](https://www.npmjs.com/package/read-file-safe): Read files without try catch

@@ -39,7 +39,8 @@
     "@bconnorwhite/bob": "^2.9.2",
     "@types/mock-fs": "^4.10.0",
     "@types/node": "^14.11.2",
-    "mock-fs": "^4.13.0"
+    "mock-fs": "^4.13.0",
+    "read-file-safe": "^1.0.8"
   },
   "eslintConfig": {
     "extends": "eslint-config-bob"
