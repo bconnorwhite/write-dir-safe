@@ -13,7 +13,7 @@ beforeEach(async () => {
         b: {}
       }
     })
-  })
+  });
 });
 
 afterEach(async () => {

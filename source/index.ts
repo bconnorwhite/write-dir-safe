@@ -5,13 +5,13 @@ export type Options = {
    * Recursively create parent directories as well. Default: `true`
    */
   recursive?: boolean;
-}
+};
 
 function handleError(e: any) {
   if(e.code === "EEXIST") {
     return true;
   } else if(e.code === "ENOENT") {
-    return false
+    return false;
   } else {
     return undefined;
   }
