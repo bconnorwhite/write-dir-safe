@@ -1,4 +1,4 @@
-import { promises, mkdirSync } from "fs";
+import { promises, mkdirSync } from "node:fs";
 
 export type Options = {
   /**
